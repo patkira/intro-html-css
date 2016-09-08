@@ -1,0 +1,89 @@
+/**
+ * Catalyst theme for reveal.js.
+ *
+ * By Pat Kira
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/lato/latofonts.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #190F10;
+$headingColor: #50433C;
+
+$mainFontSize: 38px;
+$mainFont: 'LatoWeb', Helvetica, sans-serif;
+$headingFont: 'LatoWeb', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingFontWeight: 600;
+$linkColor: #BA2025;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+$brown: #50433C;
+$blue: #5B9AA9;
+$orange: #DD8545;
+$yellow: #E6AD30;
+$green: #889A3A;
+$red: #BA2025;
+
+strong {
+  color: $blue;
+}
+
+small {
+  color: $brown;
+  &.help {
+    margin-top: 2em;
+    color: $orange;
+    font-size: 0.9em;
+  }
+}
+
+.exercise {
+  color: $green;
+}
+
+.exercise-heading {
+  color: $green !important;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.list-unstyled li {
+  list-style: none;
+}

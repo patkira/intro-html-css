@@ -1,64 +1,64 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/catalyst.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/catalyst.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-					<h1>Introduction to HTML and CSS</h1>
-					<p>
-						<small>Created by Pat Kira</small>
-					</p>
-				</section>
-				<section>
-					<h2>What Are HTML &amp; CSS?</h2>
-					<p><strong>HTML</strong> - HyperText Markup Language</p>
-					<small>Use for structuring content such as headings, paragraphs, media such as images</small>
-					<p><strong>CSS</strong> - Cascading Style Sheets</p>
-					<small>Use for styling content such as font colour, postioning content</small>
-				</section>
-				<section>
-					<h2>HTML elements</h2>
-					<ul class="list-unstyled">
-						<li><strong>Headings</strong> - &lt;h1&gt;, &lt;h2&gt;</li>
-						<li><strong>Text</strong> - &lt;p&gt;, &lt;strong&gt;</li>
-						<li><strong>Link</strong> - &lt;a href="http://www.oswd.org/"&gt;</li>
-						<li><strong>Image</strong> - &lt;img src="mdn-logo-sm.png" alt=""&gt;</li>
-						<li><strong>Text</strong> - &lt;p&gt;, &lt;strong&gt;</li>
-						<li><strong>List</strong> - &lt;ul&gt;, &lt;ol&gt; with &lt;li&gt;</li>
-					</ul>
-				</section>
-				<section>
-					<h2>HTML elements</h2>
-					<ul class="list-unstyled">
-						<li><strong>Layout</strong> - &lt;header&gt;, &lt;footer&gt;</li>
-						<li><strong>Content layout</strong> - &lt;aside&gt;, &lt;nav&gt;</li>
-						<li><strong>Container</strong> - &lt;div&gt;, &lt;span&gt;</li>
-					</ul>
-				</section>
-				<section>
-					<h2>HTML Document Structure</h2>
-					<pre><code class="hljs" data-trim contenteditable>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>Introduction to HTML and CSS</h1>
+          <p>
+            <small>Created by Pat Kira</small>
+          </p>
+        </section>
+        <section>
+          <h2>What Are HTML &amp; CSS?</h2>
+          <p><strong>HTML</strong> - HyperText Markup Language</p>
+          <small>Use for structuring content such as headings, paragraphs, media such as images</small>
+          <p><strong>CSS</strong> - Cascading Style Sheets</p>
+          <small>Use for styling content such as font colour, positioning content</small>
+        </section>
+        <section>
+          <h2>HTML elements</h2>
+          <ul class="list-unstyled">
+            <li><strong>Headings</strong> - &lt;h1&gt;, &lt;h2&gt;</li>
+            <li><strong>Text</strong> - &lt;p&gt;, &lt;strong&gt;</li>
+            <li><strong>Link</strong> - &lt;a href="http://www.oswd.org/"&gt;</li>
+            <li><strong>Image</strong> - &lt;img src="mdn-logo-sm.png" alt=""&gt;</li>
+            <li><strong>Text</strong> - &lt;p&gt;, &lt;strong&gt;</li>
+            <li><strong>List</strong> - &lt;ul&gt;, &lt;ol&gt; with &lt;li&gt;</li>
+          </ul>
+        </section>
+        <section>
+          <h2>HTML elements</h2>
+          <ul class="list-unstyled">
+            <li><strong>Layout</strong> - &lt;header&gt;, &lt;footer&gt;</li>
+            <li><strong>Content layout</strong> - &lt;aside&gt;, &lt;nav&gt;</li>
+            <li><strong>Container</strong> - &lt;div&gt;, &lt;span&gt;</li>
+          </ul>
+        </section>
+        <section>
+          <h2>HTML Document Structure</h2>
+          <pre><code class="hljs" data-trim contenteditable>
 <!-- <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -66,42 +66,111 @@
     <title>Cats are awesome!</title>
   </head>
   <body>
-  	<h1>Welcome to awesome cats</h1>
-  	<p>Rub face on everything purr for no reason toy.</p>
+    <h1>Welcome to awesome cats</h1>
+    <p>Rub face on everything purr for no reason toy.</p>
   </body>
 </html> -->
-					</code></pre>
-				</section>
-				<section>
-					<h2 class="exercise-heading">Exercise Part 1 - Simple page</h2>
-					<ul>
-						<li>Add HTML template to index.html</li>
-						<li>Add title tag &lt;title&gt; inside &lt;head&gt;</li>
-						<li>Add heading to our page, &lt;h1&gt;</li>
-						<li>Add some content to our page, &lt;p&gt;</li>
-					</ul>
-					<p><span class="exercise">Extra:</span> Set up css file for our styles</p>
-					<p class="right-align"><small class="help">HELP - see part1.html</small></p>
-				</section>
-			</div>
-		</div>
+          </code></pre>
+        </section>
+        <section class="exercise-slide">
+          <h2 class="exercise-heading">Exercise Part 1 - Simple page</h2>
+          <ul>
+            <li>Add HTML template to index.html</li>
+            <li>Add title tag &lt;title&gt; inside &lt;head&gt;</li>
+            <li>Add heading to our page, &lt;h1&gt;</li>
+            <li>Add some content to our page, &lt;p&gt;</li>
+          </ul>
+          <p><span class="exercise">Extra:</span> Set up css file for our styles</p>
+          <p class="right-align"><small class="help">HELP - see part1.html</small></p>
+        </section>
+        <section>
+          <h2>Styling our page</h2>
+          <p><strong>CSS</strong> - Cascading style sheets</p>
+          <p>It is used for <strong>styling</strong> html page and it should be <strong>sparated</strong> from the HTML.</p>
+          <p><span class="keyword">Keyword:</span> Cascading</p>
+        </section>
+        <section>
+          <h2>A simple css rule</h2>
+          <pre><code class="hljs" data-trim contenteditable>
+// Selecting element
+p { ... }
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+// CSS properties
+p {
+  color: ...;
+  font-weight: ...;
+  text-align: ...;
+}
 
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
+// Assign properties some values
+p {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+          </code></pre>
+        </section>
+        <section>
+          <h2>CSS selectors</h2>
+          <pre><code class="hljs" data-trim contenteditable>
+// Tag
+h1 { ... }
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+// Class name
+.example { ... }
+
+// Id
+#example { ... }
+
+// Select all paragraph with class name of "example"
+p.example { ... }
+
+// Select all element 'inside' paragraph
+// with class name of "example"
+p .example { ... }
+          </code></pre>
+        </section>
+        <section class="exercise-slide">
+          <h2 class="exercise-heading">Exercise Part 2 - Styling elements</h2>
+          <ul>
+            <li>Add a class to paragraph called "lead" (HTML)</li>
+            <li>Make paragraph with lead class larger font size (CSS)</li>
+            <li>Make h1 font size 40px (CSS)</li>
+            <li>Add a container around our content and it a class name of "main-content" (HTML)</li>
+            <li>Give "main-container" a width of 960px, also center the container (CSS)</li>
+          </ul>
+          <p class="right-align"><small class="help">HELP - see part2.html and help/css/styles.css</small></p>
+        </section>
+        <section class="exercise-slide">
+          <h2 class="exercise-heading">Exercise Part 2 - Styling elements</h2>
+          <ul>
+            <li>Add a class to the first paragraph called "lead" (HTML)</li>
+            <li>Make paragraph with lead class larger font size (CSS)</li>
+            <li>Make h1 font size 40px (CSS)</li>
+            <li>Add a container around our content and it a class name of "main-content" (HTML)</li>
+            <li>Give "main-container" a width of 960px, also center the container (CSS)</li>
+          </ul>
+          <p class="right-align"><small class="help">HELP - see part2.html and help/css/styles.css</small></p>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
 </html>

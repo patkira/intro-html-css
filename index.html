@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>reveal.js</title>
+    <title>Introduction to HTML and CSS</title>
 
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/catalyst.css">
@@ -33,18 +33,17 @@
         <section>
           <h2>What Are HTML &amp; CSS?</h2>
           <p><strong>HTML</strong> - HyperText Markup Language</p>
-          <small>Use for structuring content such as headings, paragraphs, media such as images</small>
+          <small>Use for structuring content such as headings, paragraphs, images</small>
           <p><strong>CSS</strong> - Cascading Style Sheets</p>
           <small>Use for styling content such as font colour, positioning content</small>
         </section>
         <section>
           <h2>HTML elements</h2>
           <ul class="list-unstyled">
-            <li><strong>Headings</strong> - &lt;h1&gt;, &lt;h2&gt;</li>
+            <li><strong>Heading</strong> - &lt;h1&gt;, &lt;h2&gt;</li>
             <li><strong>Text</strong> - &lt;p&gt;, &lt;strong&gt;</li>
             <li><strong>Link</strong> - &lt;a href="http://www.oswd.org/"&gt;</li>
             <li><strong>Image</strong> - &lt;img src="mdn-logo-sm.png" alt=""&gt;</li>
-            <li><strong>Text</strong> - &lt;p&gt;, &lt;strong&gt;</li>
             <li><strong>List</strong> - &lt;ul&gt;, &lt;ol&gt; with &lt;li&gt;</li>
           </ul>
         </section>
@@ -73,20 +72,20 @@
           </code></pre>
         </section>
         <section class="exercise-slide">
-          <h2 class="exercise-heading">Exercise Part 1 - Simple page</h2>
+          <h2 class="exercise-heading">Exercise Part 1 - Marking up a page</h2>
           <ul>
-            <li>Add HTML template to index.html</li>
+            <li>Add HTML template to index.html, including DOCTYPE declaration, html, head and body tag</li>
             <li>Add title tag &lt;title&gt; inside &lt;head&gt;</li>
             <li>Add heading to our page, &lt;h1&gt;</li>
             <li>Add some content to our page, &lt;p&gt;</li>
           </ul>
-          <p><span class="exercise">Extra:</span> Set up css file for our styles</p>
+          <p><span class="exercise">Extra:</span> Add a link to css file for our page styles</p>
           <p class="right-align"><small class="help">HELP - see part1.html</small></p>
         </section>
         <section>
           <h2>Styling our page</h2>
           <p><strong>CSS</strong> - Cascading style sheets</p>
-          <p>It is used for <strong>styling</strong> html page and it should be <strong>sparated</strong> from the HTML.</p>
+          <p>It is used for <strong>styling</strong> html page and it should be <strong>separated</strong> from the HTML.</p>
           <p><span class="keyword">Keyword:</span> Cascading</p>
         </section>
         <section>
@@ -122,10 +121,10 @@ h1 { ... }
 // Id
 #example { ... }
 
-// Select all paragraph with class name of "example"
+// Select all paragraphs with class name of "example"
 p.example { ... }
 
-// Select all element 'inside' paragraph
+// Select all elements inside a paragraph
 // with class name of "example"
 p .example { ... }
           </code></pre>
@@ -133,29 +132,28 @@ p .example { ... }
         <section class="exercise-slide">
           <h2 class="exercise-heading">Exercise Part 2 - Styling elements</h2>
           <ul>
-            <li>Add a class to paragraph called "lead" (HTML)</li>
-            <li>Make paragraph with lead class larger font size (CSS)</li>
-            <li>Make h1 font size 40px (CSS)</li>
-            <li>Add a container around our content and it a class name of "main-content" (HTML)</li>
-            <li>Give "main-content" a width of 960px, also center the container (CSS)</li>
+            <li>Add a class called “lead” to the first paragraph (HTML)</li>
+            <li>Make an element with “lead” class font size of 20px (CSS)</li>
+            <li>Make h1 2.5em font size (CSS)</li>
+            <li>Add a container around heading and the two paragraphs, also give it a class of "main-content" (HTML)</li>
+            <li>Give "main-content" a width of 800px, also center the container (CSS)</li>
           </ul>
           <p class="right-align"><small class="help">HELP - see part2.html and help/css/styles.css</small></p>
         </section>
         <section>
           <h2>Layout, float and clearfix</h2>
           <p>Long long time ago, <strong>TABLE</strong> was a thing.</p>
-          <p>Nowaday <strong>float</strong> is more favourable but one may argue that flex-box is in.</p>
+          <p>Nowaday <strong>float</strong> is more favourable but one may argue that flexbox is in.</p>
           <p>If you float anything it's likely that you will need <strong>clearfix</strong>.</p>
         </section>
         <section class="exercise-slide">
           <h2 class="exercise-heading">Exercise Part 3 - Layout and float</h2>
           <ul>
-            <li>Mark up some articles for our content - see part3.html (HTML)</li>
-            <li>Let's limit our image with to 25% (CSS)</li>
+            <li>Add a couple of articles to our page (HTML)</li>
+            <li>Let's limit our image width to 25% (CSS)</li>
             <li>Float article image "left" using "article-image" class to select the elements (CSS)</li>
             <li>Add a class of "clearfix" to our articles (HTML)</li>
-            <li>Make "h2" inside article different colour (CSS)</li>
-            <li>Add padding, margin, and border on our articles (CSS)</li>
+            <li>Change colour of article heading to green (CSS)</li>
           </ul>
           <p class="right-align"><small class="help">HELP - see part3.html and help/css/styles.css</small></p>
         </section>
@@ -164,7 +162,6 @@ p .example { ... }
           <p><strong>Inline</strong> - sits next to other elements, ignores width or height.</p>
           <p><strong>Inline-block</strong> - sits next to other elements, accepts width or height.</p>
           <p><strong>Block</strong> - breaks past other elements, takes as much width.</p>
-          <p>ADD IMAGE IF POSSIBLE</p>
         </section>
         <section>
           <h2>CSS specificity</h2>
@@ -174,45 +171,51 @@ p .example { ... }
             <li><strong>Classes and attributes</strong> - .example</li>
             <li><strong>Elements</strong> - h1, span, ul</li>
           </ol>
+          <p>What happens if you have 2 contradictory rules that target the same elements?</p>
+          <pre><code class="hljs" data-trim contenteditable>
+p {
+  color: red;
+}
+p {
+  color: blue;
+}
+          </code></pre>
         </section>
         <section class="exercise-slide">
           <h2 class="exercise-heading">Exercise Part 4 - display which one?</h2>
           <ul>
-            <li>Let's add a navigation to the page - see part4.html (HTML)</li>
-            <li>Select links with a class of "nav-item", add some padding (CSS)</li>
+            <li>Let's add a menu to our page (HTML)</li>
+            <li>Add background colour to our header using "id" (CSS)</li>
+            <li>Select navigation links using a class of "nav-item" then add some padding (CSS)</li>
             <li>Make "nav-item" display "inline-block" (CSS)</li>
             <li>Change navigation link colour (CSS)</li>
-            <li>Add background colour to our header using "id" (CSS)</li>
-            <li>Get rid of that "red"! (CSS)</li>
-            <li>Add padding, margin, and border to our articles (CSS)</li>
           </ul>
+          <p><span class="exercise">Extra:</span> Make "more cats" link inside article starts on the next line </p>
           <p class="right-align"><small class="help">HELP - see part4.html and help/css/styles.css</small></p>
         </section>
         <section>
           <h2>Box sizing</h2>
           <p><strong>Content box</strong> - width and/or height = what is specified, padding and border are added on.</p>
           <p><strong>Border box</strong> - padding and border are included in specified width and/or height.</p>
-          <p>ADD IMAGE IF POSSIBLE</p>
         </section>
         <section class="exercise-slide">
           <h2 class="exercise-heading">Exercise Part 5 - Box sizing</h2>
           <ul>
-            <li>Let's add a footer to the page - see part5.html (HTML)</li>
-            <li>Make "social media" paragraph "350px" wide (CSS)</li>
-            <li>Add some padding to it (CSS)</li>
+            <li>Let's add a footer to our page (HTML)</li>
+            <li>Add background colour, top margin and padding to our footer (CSS)</li>
+            <li>Make "social media" paragraph "350px" wide then center the paragraph (CSS)</li>
+            <li>Add padding and border to our social media paragraph (CSS)</li>
             <li>Now, add "border-box" (CSS)</li>
             <li>Make our footer pretty!!! (CSS)</li>
           </ul>
           <p class="right-align"><small class="help">HELP - see part5.html and help/css/styles.css</small></p>
         </section>
         <section>
-          <h2>Recap HTML</h2>
+          <h2>Recap</h2>
           <ul>
-            <li>Tags</li>
             <li>Good HTML structure = accessible</li>
-            <li>HTML attributes e.g. id, class, alt, href</li>
-            <li></li>
-            <li>Make our footer pretty!!! (CSS)</li>
+            <li>Only link to CSS stylesheet</li>
+            <li>Use class to select not ID</li>
           </ul>
         </section>
       </div>

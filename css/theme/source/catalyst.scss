@@ -68,6 +68,10 @@ small {
   }
 }
 
+p.small-text {
+  font-size:19px;
+}
+
 .exercise {
   color: $green;
 }
@@ -90,4 +94,19 @@ small {
 
 .list-unstyled li {
   list-style: none;
+}
+
+h1.catalyst-logo {
+  background: url(images/catalyst-logo.svg) no-repeat 50% 0/30% auto;
+  font-size: 0;
+  color: transparent;
+  width: 100%;
+  height: 60px;
+}
+
+section img.cat-slogan-image {
+  width: 550px;
+  margin: 0;
+  border: none;
+  box-shadow: none;
 }
